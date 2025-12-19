@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code N Crust Pizzeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#FF8A00"/>
+              <stop offset="1" stop-color="#FF3D00"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" fill="url(#g)" />
+          <g transform="translate(12,12) scale(0.9)" fill="#fff" opacity="0.9">
+            <path d="M18 8c-6 0-10 4-10 8s4 8 10 8 10-4 10-8-4-8-10-8z"/>
+            <circle cx="18" cy="20" r="2" />
+          </g>
+        </svg>
+        <div class="title">
+          <h1>Code N Crust Pizzeria</h1>
+          <p class="tag">A cozy slice of code & Bitcoin — Happy Bitcoin Pizza Day</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="#menu">Menu</a>
+        <a class="btn ghost" href="#about">About</a>
+        <a class="btn neon" href="#order">Order</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h2>Warm slices, bold flavors — and a playful nod to Bitcoin ₿</h2>
+          <p class="lead">Join us in celebrating the infamous Bitcoin Pizza Day — where a slice became legend. Try our limited-time Satoshi Special.</p>
+          <div class="hero-cta">
+            <a class="cta" href="#menu">See the Menu</a>
+            <a class="cta alt" href="#order">Order with BTC</a>
+          </div>
+        </div>
+        <div class="coin" aria-hidden="true">₿</div>
+      </section>
+
+      <section id="menu" class="menu">
+        <h3>Our Pizzas</h3>
+        <div class="cards">
+          <article class="card">
+            <div class="emoji">🍕</div>
+            <h4>Margherita Code</h4>
+            <p>Classic tomatoes, fresh basil, gooey mozzarella — simple, reliable, delightful.</p>
+            <div class="price">$12</div>
+          </article>
+          <article class="card featured">
+            <div class="emoji">✨</div>
+            <h4>Satoshi Special</h4>
+            <p>Smoky pepperoni, honey drizzle, neon chili flakes — named in honor of Bitcoin Pizza Day.</p>
+            <div class="price">0.00015 BTC</div>
+          </article>
+          <article class="card">
+            <div class="emoji">🌶️</div>
+            <h4>Spicy Merge</h4>
+            <p>Fiery sausage, roasted peppers, and a hot sauce finish for the bold.</p>
+            <div class="price">$15</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h3>About</h3>
+        <p>Code N Crust Pizzeria is a playful, cozy spot where tasty pies and tech culture meet. We celebrate creativity, good coffee, friendly servers, and the storied Bitcoin Pizza Day — because every great project starts with a slice.</p>
+      </section>
+
+      <section id="order" class="order">
+        <h3>Order</h3>
+        <p>We accept modern payments — including a tongue-in-cheek option for crypto. (This demo site doesn't process payments.)</p>
+        <div class="order-buttons">
+          <button class="big">Pay with Card</button>
+          <button class="big neon">Pay with BTC</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="foot-inner">
+        <p>© Code N Crust Pizzeria — Happy Bitcoin Pizza Day! <span class="muted">Made with warmth & a little neon</span></p>
+        <p class="social">Share the love: <a href="#">Twitter</a> · <a href="#">Instagram</a></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
