@@ -12,42 +12,82 @@
   <body>
     <header class="site-header">
       <div class="logo-wrap">
-        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <!-- Code N Crust Pizzeria logo -->
+        <svg class="logo" viewBox="0 0 80 80" aria-hidden="true">
           <defs>
-            <linearGradient id="g" x1="0" x2="1">
-              <stop offset="0" stop-color="#FF8A00"/>
-              <stop offset="1" stop-color="#FF3D00"/>
+            <linearGradient id="g2" x1="0" x2="1">
+              <stop offset="0" stop-color="#FFD166"/>
+              <stop offset="1" stop-color="#FF6B6B"/>
             </linearGradient>
           </defs>
-          <circle cx="32" cy="32" r="30" fill="url(#g)" />
-          <g transform="translate(12,12) scale(0.9)" fill="#fff" opacity="0.9">
-            <path d="M18 8c-6 0-10 4-10 8s4 8 10 8 10-4 10-8-4-8-10-8z"/>
-            <circle cx="18" cy="20" r="2" />
+          <rect x="4" y="4" width="72" height="72" rx="14" fill="url(#g2)" />
+          <g transform="translate(12,12) scale(0.9)" fill="#3b150c">
+            <path d="M20 8c-6 0-10 4-10 8s4 8 10 8 10-4 10-8-4-8-10-8z"/>
+            <circle cx="20" cy="20" r="2" fill="#fff"/>
           </g>
+          <text x="44" y="56" font-family="Comfortaa, Inter, sans-serif" font-weight="700" font-size="20" fill="#3b150c">C</text>
         </svg>
         <div class="title">
           <h1>Code N Crust Pizzeria</h1>
-          <p class="tag">A cozy slice of code & Bitcoin — Happy Bitcoin Pizza Day</p>
+          <p class="tag">Slices, smiles & a little Bitcoin nostalgia</p>
         </div>
       </div>
       <nav class="nav">
+        <a class="btn" href="#home">Home</a>
         <a class="btn" href="#menu">Menu</a>
-        <a class="btn ghost" href="#about">About</a>
-        <a class="btn neon" href="#order">Order</a>
+        <a class="btn" href="#btc">Bitcoin Pizza Day</a>
+        <a class="btn ghost" href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="hero-inner">
-          <h2>Warm slices, bold flavors — and a playful nod to Bitcoin ₿</h2>
-          <p class="lead">Join us in celebrating the infamous Bitcoin Pizza Day — where a slice became legend. Try our limited-time Satoshi Special.</p>
+          <h2 class="hero-title">Code N Crust Pizzeria — Order a warm slice</h2>
+          <p class="lead">A cozy corner for coders, pizza lovers, and BTC historians. Celebrate Bitcoin Pizza Day with our playful specials.</p>
           <div class="hero-cta">
-            <a class="cta" href="#menu">See the Menu</a>
-            <a class="cta alt" href="#order">Order with BTC</a>
+            <a class="cta big-cta" href="#order">Order a Slice</a>
+            <a class="cta alt" href="#menu">Browse Menu</a>
+          </div>
+          <p class="small">Want to pay in vibes? Try our tongue-in-cheek BTC option at checkout.</p>
+        </div>
+        <div class="hero-art">
+          <!-- Header image (uses the newly added image file) -->
+          <img src="generated-image(1).png" alt="Code N Crust Pizzeria header" class="hero-img" onerror="this.style.display='none'"/>
+        </div>
+      </section>
+
+      <section id="btc" class="btc">
+        <h3>What is Bitcoin Pizza Day?</h3>
+        <p>In 2010, a developer paid 10,000 BTC for two pizzas — a legendary moment that shows how far crypto has come. Today we remember that quirky milestone with tasty pies and a wink.</p>
+        <p class="muted">(Yes — historically that was two pizzas for 10,000 BTC. The rest is internet lore.)</p>
+      </section>
+      <!-- Featured section removed per request -->
+
+      <section id="about" class="about">
+        <h3>About</h3>
+        <p>Code N Crust Pizzeria is a playful, cozy spot where tasty pies and tech culture meet. We celebrate creativity, good coffee, friendly servers, and the storied Bitcoin Pizza Day — because every great project starts with a slice.</p>
+      </section>
+
+      <section class="how">
+        <h3>How it works</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">1</div>
+            <h4>Choose your slice</h4>
+            <p>Pick a tasty pie from our playful menu.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">2</div>
+            <h4>Pay in vibes</h4>
+            <p>Pay with card, or choose the fun "vibes" BTC option for celebration-only.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">3</div>
+            <h4>Celebrate</h4>
+            <p>Eat, share a slice, and toast Bitcoin Pizza Day.</p>
           </div>
         </div>
-        <div class="coin" aria-hidden="true">₿</div>
       </section>
 
       <section id="menu" class="menu">
@@ -73,12 +113,6 @@
           </article>
         </div>
       </section>
-
-      <section id="about" class="about">
-        <h3>About</h3>
-        <p>Code N Crust Pizzeria is a playful, cozy spot where tasty pies and tech culture meet. We celebrate creativity, good coffee, friendly servers, and the storied Bitcoin Pizza Day — because every great project starts with a slice.</p>
-      </section>
-
       <section id="order" class="order">
         <h3>Order</h3>
         <p>We accept modern payments — including a tongue-in-cheek option for crypto. (This demo site doesn't process payments.)</p>
@@ -86,6 +120,11 @@
           <button class="big">Pay with Card</button>
           <button class="big neon">Pay with BTC</button>
         </div>
+      </section>
+      
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Questions or collabs? Drop us a message: <a href="mailto:hello@codencrust.example">hello@codencrust.example</a></p>
       </section>
     </main>
 
